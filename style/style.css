@@ -1,0 +1,307 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.containers{
+    width: 1200px;
+    margin: auto;
+}
+
+/* header */
+
+.root{
+    height: 624px;
+    background-image: url("/img/header-background.png");
+    background-size: 624px;
+    background-repeat: no-repeat;
+}
+.nav__btn{
+    width: 107px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 120px;
+    font-size: 16px;
+    background-color: #fff;
+}
+.nav__btn2{
+    border-radius: 120px;
+}
+.danger{
+    color: white;
+    background-color: red;
+    border: none;
+}
+.nav__body{
+    width: 583px;
+}
+.header{
+    display: flex;
+    justify-content: flex-end;
+}
+.header__section{
+    width: 50%;
+}
+.header__title{
+    font-size: 60px;
+    font-weight: 880;
+    line-height: 64px;
+    padding-top: 68px;
+}
+.header__text{
+    font-size: 18px;
+    margin-top: 18px;
+}
+.row{
+    width: 100%;
+}
+
+/* dizipro */
+
+.dizipro{
+    margin-top: 144px;
+}
+.dizipro__box{
+    background: #FCFCFC;
+    box-shadow: inset 0px 4px 16px rgba(0, 0, 0, 0.12);
+}
+.dizipro__logo-img{
+    width: 277px;
+    height: 82px;
+}
+
+.number{
+    margin-top: 144px;
+}
+
+/* work */
+
+.works__card{
+    width: 380px;
+}
+
+.works__card:nth-child(5){
+    margin-top: -160px;
+}
+
+/* course */
+
+.course__card{
+    width: 384px;
+    height: 681px; 
+    padding: 12px;
+    border: 1.5px solid #D9D9D9;
+    border-radius: 10px;
+}
+.course__card-card{
+    height: 450px;
+}
+.course__card-btn{
+    width: 336px;
+    height: 48px;
+    border: 1.5px solid #000000;
+    border-radius: 24px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #fff;
+}
+.dark{
+    background: #000000;
+    border: 1.5px solid #000000;
+    color: #fff;
+}
+
+/* questions */
+
+.questions{
+    margin-top: 144px;
+}
+.questions__title{
+    margin-bottom: 44px;
+}
+.accordion{
+    width: 817px;
+    margin: 12px auto;
+}
+.accordion-header{
+    
+    border-top: 1px solid #efefef;
+}
+.accordion-button:not(.collapsed){
+    box-shadow: none;
+}
+.accordion-body{
+    background-color:#fafafa;
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+/* article */
+
+.articles{
+    margin-top: 144px;
+}
+.articles__title{
+    margin-bottom: 26px;
+}
+.article__card{
+    margin-bottom: 26px;
+    background: #FFFFFF;
+    border: 1.5px solid #EFEFEF;
+    border-radius: 12px;
+}
+.article__card-box{
+    padding: 16px;
+}
+.article__card-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.01em;
+}
+.article__card-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: -0.01em;
+}
+.article__card-date{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    opacity: 0.6;
+    margin-top: 7px;
+}
+/* footer */
+
+footer{
+    background-color:#fafafa;
+}
+.height{
+    height: 240px;
+}
+.footer__text{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+.footer__tel{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+}
+.footer__list{
+    display: flex;
+    list-style-type: none;
+}
+.footer__item{
+    margin-right: 34px;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 992px){
+    .containers{
+        width: 800px;
+        margin: auto;
+    }
+    
+    /* header */
+    .root{
+        height: 624px;
+        background-image: none;
+    }
+    .header{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .header__section{
+        width: 75%;
+    }
+
+    /* work */
+    .works__card:nth-child(5){
+        margin-top: -0px;
+    }
+    .works__img-1{
+        width: 380px;
+        height: 380px;
+    }
+    
+    /* course */
+    .course__card{
+        margin-bottom: 40px;
+    }
+    
+    /* questions */
+    .questions{
+        margin-top: 104px;
+    }
+    .accordion{
+        width: 600px;
+        margin: 12px auto;
+    }
+    
+    /* article */
+    .article__card-title{
+        font-size: 14px;
+    }
+    .article__card-text{
+        font-size: 12px;
+    }
+    .article__card-date{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .containers{
+        width: 700px;
+        margin: auto;
+    }
+    
+    /* header */
+    
+
+    .header__title{
+        font-weight: 700;
+    }
+    .header__text{
+        font-size: 18px;
+        margin-top: 18px;
+    }
+    
+    /* dizipro */
+    .dizipro__logo{
+        height: 550px;
+    }
+    .dizipro__logo-img{
+        width: 400px;
+        height: 100px;
+    }
+    
+    /* work */
+    
+    .works__card-card{
+        justify-content: center;
+    }
+    /* course */
+    .course__card{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    /* questions */
+    .questions{
+        margin-top: 124px;
+    }
+    .accordion{
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 576px){
+    .containers{
+        width: 400px;
+        margin: auto;
+    }
+}
